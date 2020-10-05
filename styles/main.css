@@ -1,0 +1,125 @@
+:root{
+    --color-red: #E50914;
+    --color-black: #141414;
+    --color-primary-font: #aaaaaa;
+}
+
+/* == RESET DEFAULT == */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* == ELEMENTOS BASE == */
+
+body{
+    background: var(--color-black);
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:0.4rem 1rem;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--color-red);
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--color-primary-font);
+    margin-right: 10px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+/* == FILME PRINCIPAL == */
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%),url('../img/la-casa-de-papel.jpg');
+
+    height: 70vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header .cat-title{
+    display: flex;
+    margin: 1.5rem;
+    padding: 10px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    border-left: 8px solid red;
+    
+}
+
+.titulo{
+    font-size: 40px;
+    font-family: 'Oswald', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.botao{
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    transition: 0.3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.filme-principal .container{
+    width: 70%;
+    margin-left: 1.5rem;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.carrosel-filmes img{
+    cursor: pointer;
+}
